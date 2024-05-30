@@ -16,54 +16,56 @@
         <button class="contactButton">Contact Me</button>
     </div>
 </nav>
-<body>
+<body style="background-color: rgba(175, 183, 223, 0.582);">
     <h1 style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">ADD MY PROJECT</h1>
     <form style="max-width: 50rem; margin:0 auto;">
         <div style="display: grid; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
             <label for="projectname">Project Name</label>
             <input type="text" id="projectname" name="projectname" 
-            style="border: 1px solid grey;height: 25px; border-radius: 5px;" />
+            style="border: 1px solid whitesmoke;height: 25px; border-radius: 5px; box-shadow: 1px 1px 1px 1px grey;" />
         </div>
         <div style="display: flex; justify-content: space-between; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-top: 20px; gap: 20px;">
             <div style="display:grid; width: 50%;">
                 <label for="startdate">Start Date</label>
                 <input type="date" id="startdate" name="startdate"
-                style="border: 1px solid grey; height: 25px; border-radius: 5px;"/>
+                style="border: 1px solid whitesmoke; height: 25px; border-radius: 5px; box-shadow: 1px 1px 1px 1px grey;"/>
 
             </div>
             <div style="display: grid; width: 50%;;">
                 <label for="enddate">End Date</label>
                 <input type="date" id="enddate" name="enddate"
-                style="border: 1px solid grey; height: 25px; border-radius: 5px;"/>
+                style="border: 1px solid whitesmoke; height: 25px; border-radius: 5px; border-radius: 5px; box-shadow: 1px 1px 1px 1px grey;"/>
 
             </div>
         </div>
         <div style="display: grid; font-family: Arial, Helvetica, sans-serif; font-weight: bold; margin-top: 20px;">
             <label>Description</label>
-            <textarea cols="50" style="resize:none; border: 1px solid grey; height: 25px; border-radius: 5px; height: 80px;"></textarea>
+            <textarea cols="50" style="resize:none; border: 1px solid whitesmoke; height: 25px; border-radius: 5px; height: 80px; border-radius: 5px; box-shadow: 1px 1px 1px 1px grey;"></textarea>
 
         </div>
         <div style="font-family: Arial, Helvetica, sans-serif; margin-top: 20px; font-weight: bold;">
             <label>Technologies</label>
             <div>
-                <label style="color: rgb(75, 75, 75)"><input type="checkbox" name="option1">Node Js</label>
-                <label style="color: rgb(75, 75, 75)"><input type="checkbox" name="option2">Next Js</label>
+                <label style="color: rgb(75, 75, 75);"><input type="checkbox" name="option1">Node Js</label>
+                <label style="color: rgb(75, 75, 75); margin-left: 5%;"><input type="checkbox" name="option2">Next Js</label>
             </div>
+            <br>
             <div>
-                <label style="color: rgb(75, 75, 75)"><input type="checkbox" name="option3">React Js</label>
-                <label style="color: rgb(75, 75, 75)"><input type="checkbox" name="option4">TypeScript</label>
+                <label style="color: rgb(75, 75, 75);"><input type="checkbox" name="option3">React Js</label>
+                <label style="color: rgb(75, 75, 75); margin-left: 4.5%;"><input type="checkbox" name="option4">TypeScript</label>
 
             </div>
 
         </div>
         <div style="display: grid; margin-top: 20px;">
             <label style="font-weight: bold;">Upload Image</label>
-            <div style="width: 100%; border: 1px solid black;">
-                <label for="image" style="border: 1px solid black;border-width: 0px 1px 0px 0px;">Choose File</label>
+            <div style="width: 100%; border: 1px solid whitesmoke;box-shadow: 1px 1px 1px 1px grey; border-radius: 5px ; background-color: white;">
+                <label for="image" style="border: 1px solid black;border-width: 0px 0px 0px 0px; background-color: rgb(189, 189, 189); border-radius: 5px; color: rgb(119, 119, 119);">Choose File</label>
             </div>
             <input hidden id="image" name="image" type="file">
 
         </div>
+        <button type="button" style="margin-top: 5%; margin-left: 90%; background-color: rgb(2, 2, 49); color: white; width: 10%; border-radius: 5px; border-color: rgb(2, 2, 49);">submit</button>
     </form>
     
 </body>
